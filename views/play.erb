@@ -1,4 +1,5 @@
 <%= @parsed_play.title %>
 <% @parsed_play.personae.each do |persona| %>
   <%= persona.name %>
+  <%= persona.number_of_lines_spoken %>
 <% end %>

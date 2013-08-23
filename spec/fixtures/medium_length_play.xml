@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE PLAY SYSTEM "play.dtd">
+<PLAY>
+  <TITLE>The Tragedy of Julius Caesar</TITLE>
+  <PERSONAE>
+    <TITLE>Dramatis Personae</TITLE>
+    <PERSONA>Ben</PERSONA>
+    <PERSONA>Brad</PERSONA>
+  </PERSONAE>
+  <SCNDESCR>SCENE  Rome: the neighbourhood of Sardis: the neighbourhood of Philippi.</SCNDESCR>
+  <PLAYSUBT>JULIUS CAESAR</PLAYSUBT>
+  <ACT>
+    <TITLE>ACT I</TITLE>
+    <SCENE>
+      <TITLE>SCENE I.  Rome. A street.</TITLE>
+      <STAGEDIR>Enter FLAVIUS, MARULLUS, and certain Commoners</STAGEDIR>
+      <SPEECH>
+        <SPEAKER>Ben</SPEAKER>
+        <LINE>Hi! I'm Ben.</LINE>
+        <LINE>Hola.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Brad</SPEAKER>
+        <LINE>I am Brad the Magnificent.</LINE>
+        <LINE>FEEL MY POWER!</LINE>
+        <LINE>FEEL MY POWER MORE!</LINE>
+      </SPEECH>
+    </SCENE>
+  </ACT>
+</PLAY>

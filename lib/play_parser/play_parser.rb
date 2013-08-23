@@ -10,17 +10,29 @@ class Parser
   end
 
   def personae
-    @document.xpath('//PERSONA').map(&:text).map { |name| Persona.new(name) }
+    @document.xpath('//PERSONA').map(&:text).
+      map { |name| Persona.new(name, number_of_lines_spoken_by(name)) }
+  end
+
+  def number_of_lines_spoken_by(name)
+    puts @document.xpath('//SPEECH').select { |speech| speech.children.first.text == name }
+
+
   end
 end
 
 class Persona
-  def initialize(name)
+  def initialize(name, number_of_lines_spoken)
     @name = name
+    @number_of_lines_spoken = number_of_lines_spoken
   end
 
   def name
     @name
+  end
+
+  def number_of_lines_spoken
+    @number_of_lines_spoken
   end
 
 end
