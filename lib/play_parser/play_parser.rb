@@ -8,4 +8,19 @@ class Parser
   def title
     @document.xpath('//TITLE').first.text
   end
+
+  def personae
+    @document.xpath('//PERSONA').map(&:text).map { |name| Persona.new(name) }
+  end
+end
+
+class Persona
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+
 end
